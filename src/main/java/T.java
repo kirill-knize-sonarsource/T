@@ -1,35 +1,53 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.io.IOException;
-import java.rmi.server.ServerCloneException;
-import java.util.*;
-
 public class T {
 
-    Object currentObj = null;
+    public static int TEST = 0;
 
-    private static Object getObject(Object obj) {
-        Object o = obj;
-        while (o != null) {
-            o = getObject(obj);
+    public static void main(String[] args) {
+        while (true){
+            baz();
         }
-        return o;
-    }
 
-    private T() {
-        Object obj = getObject(currentObj);
-        System.out.println(obj.toString());
-    }
-
-    private void Foo() {
-        String s = "AAAAAAAAAAAAAAAA";
-        String s2 = "AAAAAAAAAAAAAAAA";
-        String s3 = "AAAAAAAAAAAAAAAA";
-        String s4 = "AAAAAAAAAAAAAAAA";
-        String s5 = "AAAAAAAAAAAAAAAA";
-        System.out.printf(s + s2 + s3 + s4 + s5);
     }
 
 
+    static void baz(){
+        for (int i = 0; i < 100; i++) {
+            bar();
+        }
+        for (int i = 0; i < 10000; i++) {
+            bar();
+        }        for (int i = 0; i < 100; i++) {
+            bar();
+        }
+        for (int i = 0; i < 10000; i++) {
+            bar();
+        }
+    }
+
+    /**
+     *
+     * @param i - some integer
+     * @param c - same character
+     * @return - constant double
+     */
+    static Double foo(Integer i, Character c) {
+        return 2.0;
+    }
+
+    static void bar() {
+
+    }
+
+    static void baZ(){
+
+    }
+
+    static void bAz(){
+
+    }
+
+    static void Baz(){
+
+    }
 
 }

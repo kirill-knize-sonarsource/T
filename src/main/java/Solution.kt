@@ -2,9 +2,6 @@
  * Definition for a binary tree node.
  */
 
-fun sumEvenGrandparent(root: TreeNode?): Int {
-
-}
 
 var sum = 0
 

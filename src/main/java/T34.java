@@ -2,7 +2,7 @@ import java.security.NoSuchAlgorithmException;
 import javax.crypto.Cipher;
 import javax.crypto.NoSuchPaddingException;
 
-public class R {
+public class T34 {
 
     public static int TEST = 0;
 
